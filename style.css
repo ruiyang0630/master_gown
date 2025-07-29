@@ -7,11 +7,17 @@ h1 {
     text-align: center;
 }
 
-.gallery {
+.container {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
+    justify-content: center;
 }
 
 .image-container {
